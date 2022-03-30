@@ -3,7 +3,7 @@ Tabbed Products Pro für Zen Cart 1.5.7 deutsch
 
 Hinweis: 
 Freigegebene getestete Versionen für den Einsatz in Livesystemen ausschließlich unter Releases herunterladen:
-https://github.com/zencartpro/157-modul-tabbed-products/releases
+* https://github.com/zencartpro/157-modul-tabbed-products/releases
 
 Dieses Modul erlaubt die Darstellung der verschiedenen Informationen auf der Artikeldetailseite in Tabs.
 
