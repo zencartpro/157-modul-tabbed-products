@@ -1,0 +1,113 @@
+Tabbed Products Pro 1.6.0 für Zen Cart 1.5.7 deutsch
+
+Dieses Modul erlaubt die Darstellung der verschiedenen Informationen auf der Artikeldetailseite in Tabs.
+
+deutsche Übersetzung/Anpassung des Moduls Tabbed Products Pro 1.20
+https://www.zen-cart.com/downloads.php?do=file&id=646
+
+Änderungen gegenüber englischer Version:
+- Unterstützung des CSS/JS Loaders (Minify)
+- Konfiguration auf deutsch
+- Bugfix für Anzeige des Artikelbildes im Bewertungstab beim Template responsive_classic
+- Bugfix für Anzeige des Warenkorb Buttons im Bewertungstab
+- Anpassungen für 1.5.7 und PHP 8
+
+
+Installation und Verwendung:
+
+Dieses Modul ist nur für Zen Cart 1.5.7 deutsch geeignet.
+
+Für den Einbau dieses Moduls sollten Sie über folgende Werkzeuge verfügen:
+
+1) Ein guter Texteditor.
+Damit ist nicht das in Windows enthaltene Notepad oder Microsoft Word gemeint.
+Sie benötigen einen Texteditor, der utf-8 versteht und auch im Format utf-8 ohne BOM abspeichern kann.
+Empfehlung: UltraEdit (kostenlose 30 Tage Testversion verfügbar)
+Ebenfalls gut geeignet ist der kostenlose Texteditor Notepad++
+
+2) Ein Tool zum Vergleichen von Dateien
+Bei der Installation dieses Moduls ist es erforderlich, dass Sie den Inhalt einiger Ihrer bestehenden Zen Cart Dateien mit dem Inhalt der neuen Moduldateien vergleichen und die Änderungen zusammenführen ("mergen").
+Empfehlung: BeyondCompare (kostenlose 30 Tage Testversion verfügbar)
+Ebenfalls gut geeignet ist das kostenlose Programm WinMerge
+
+Empfehlung:
+
+Dieses Modul erst in einem Testsystem einbauen und dort konfigurieren/testen und endgültig an die eigenen Wünsche anpassen. 
+Erst dann in einem Liveshop einsetzen! Sichern Sie unbedingt alle Dateien Ihres Shops per FTP und sichern Sie die Datenbank mit phpMyAdmin oder anderen geeigneten Tools!
+WICHTIG
+Vor dem Einbau dieser Änderungen:
+BACKUP von Shop und Datenbank machen!
+Keine Haftung, Verwendung auf eigene Gefahr!
+BACKUP gemacht? Ok, dann weiterlesen...
+
+Die Installation erfolgt in folgenden Schritten. Halten Sie diesen Ablauf ein!
+
+1)
+Im Ordner GEAENDERTE DATEIEN den Ordner DEINTEMPLATE auf den Namen des im Shop aktiven Templates umbenennen.
+Hinweis: Der Ordner DEINTEMPLATE_RESPONSIVE enthält bereits für das Template responsive_classic angepasste Dateien. Falls Sie das Template responsive_classic verwenden, dann verwenden Sie unbedingt die Dateien aus dem Ordner DEINTEMPLATE_RESPONSIVE.
+Wenn Sie Zen Cart 1.5.7 gerade frisch installiert haben und noch keinerlei Änderungen an den Dateien vorgenommen haben, können Sie nun alle Dateien/Ordner aus dem Ordner GEAENDERTE DATEIEN in der vorgegebenen Struktur in die Zen Cart Installation hochladen. Dabei werden dann etliche Dateien überschrieben.
+Wenn Sie Zen Cart 1.5.7 schon länger im Einsatz haben und schon einmal Änderungen an Dateien vorgenommen oder andere Module eingebaut haben, dann laden Sie die Dateien keinesfalls einfach hoch.
+Vergleichen Sie alle Dateien im Ordner GEAENDERTE DATEIEN mit den entsprechenden Dateien in Ihrem Shop und nehmen Sie die Änderungen manuell per WinMerge oder BeyondCompare vor.
+Dann spielen Sie die geänderten Dateien in der gezeigten Struktur ein.
+
+2)
+Im Ordner NEUE DATEIEN den Ordner DEINADMIN auf den Namen des Admin Verzeichnisses umbenennen. Alle Ordner namens DEINTEMPLATE auf den Namen des im Shop aktiven Templates umbenennen.
+Dann in der vorgegebenen Struktur hochladen, dabei werden keine bestehenden Dateien überschrieben
+
+3)
+In die Zen Cart Administration einloggen und auf irgendeinen Menüpunkt clicken.
+Sie sollten oben die Erfolgsmeldung sehen Tabbed Products Pro erfolgreich installiert und unter Konfiguration ist nun der neue Menüpunkt Tabbed Products Pro Konfiguration vorhanden.
+
+4)
+Stellen Sie hier wie gewünscht ein
+
+5)
+WICHTIG:
+Um bei einem Artikel, die Artikelbeschreibung in Tabs aufzuteilen, schalten Sie den Editor auf NORMALER TEXT um.
+Verwenden Sie also NICHT CKEditor oder Tiny MCE!
+Generell unter Konfiguration > Mein Shop > HTML Editor auf Normaler Text schalten.
+Oder jedesmal individuell unter Webshop > Kategorien und Artikel rechts oben Interner HTML Editor auf Normaler Text stellen
+Für Tabbed Products müssen Sie immer im Nur Text Modus arbeiten!
+
+Das hier: <!--%  ist immer das Kommando für den Beginn eines Tabs
+Das hier: %-->  ist immer das Kommando für das Ende eines Tabs
+Alles was dazwischen geschrieben wird, ist immer der Titel des Tabs
+
+Beispiel:
+
+Hier ein kurzer Text, der über den Tabs erscheinen wird
+<!--%Beschreibung%-->
+Ich bin die Beschreibung zum Artikel
+<!--%Spezifikationen%-->
+Ich bin der Text, der unter dem Tab Spezifikationen erscheinen wird
+<!--%Weitere Infos%-->
+Hier der Text zum Tab namens weitere Infos, das könnte z.B. auch ein <a href="http://www.irgendwas.de" target="_blank">Link</a> oder ein Bild oder was auch immer sein
+
+Wenn es in Ihrem Shop Sinn macht, bei jedem Artikel zusätzlich denselben Inhalt in einem Tab anzuzeigen, können Sie die drei mitgelieferten Define Pages define_product_info_custom_tab_1.php, define_product_info_custom_tab_2.php und define_product_info_custom_tab_3.php nutzen.
+Deren Inhalt wird dann falls in der Konfiguration aktiviert angezeigt
+
+Weitere detailierte Infos zur Verwendung in der englischen readme_tabbed.html im Ordner DOKU ENGLISH
+
+6)
+Anpassung des Aussehens der Tabs
+Es werden etliche Stylesheets und Grafiken mitgeliefert.
+Voreingestellt ist das Stylesheet alt_tpp_tabs6.css
+Die Stylesheets liegen im Ordner includes/templates/DEINTEMPLATE/css/tpp
+Die passenden Grafiken in includes/templates/DEINTEMPLATE/images/tpp
+Um einen anderen Stil zu verwenden, ein anderes Stylesheet aufrufen und dazu in folgender Datei entprechend anpassen:
+includes/templates/DEINTEMPLATE/auto_loaders/loader_tpp.php
+Soll also z.B. Stylesheet 13 verwendet werden, dort ändern auf:
+'tpp/alt_tpp_tabs13.css' => 10,
+
+
+
+DEINSTALLATION:
+
+1)
+Im Ordner UNINSTALL die uninstall.sql mit einem Texteditor öffnen und den Inhalt ins Eingabefeld unter Tools > SQL Patches installieren kopieren und absenden
+
+2)
+Alle von diesem Modul neu hinzugefügten Dateien vom Server löschen
+
+3)
+Alle von diesem Modul geänderten Dateien wieder mit den Dateien Ihres zuvor angelegten Backups ersetzen
