@@ -7,14 +7,14 @@
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: tpl_product_reviews_default.php for Tabbed Products Pro 2022-03-30 18:53:58Z webchills $
+ * @version $Id: tpl_product_reviews_default.php for Tabbed Products Pro 2023-12-08 18:53:58Z webchills $
  */
 ?>
 <div class="centerColumn" id="reviewsDefault">
 <?php if ($messageStack->size('product_info') > 0) echo $messageStack->output('product_info'); ?>
 <div id="reviews-top">
 <?php
-  if (zen_not_null($products_image)) {
+  if (!empty($products_image)) {
   /**
    * require the image display code
    */
@@ -34,14 +34,14 @@
 <?php
   // more info in place of buy now
   if (zen_has_product_attributes($review->fields['products_id'] )) {
-    //   $link = '<p>' . '<a href="' . zen_href_link(zen_get_info_page($review->fields['products_id']), 'products_id=' . $review->fields['products_id'] ) . '">' . MORE_INFO_TEXT . '</a>' . '</p>';
+    //   $link = '<p>' . '<a href="' . zen_href_link(zen_get_info_page($review->fields['products_id']), 'products_id=' . $review->fields['products_id'] ) . '" title="' . $review->fields['products_id']) . '">' . MORE_INFO_TEXT . '</a>' . '</p>';
     $link = '';
   } else {
     $link= '<a href="' . zen_href_link($_GET['main_page'], zen_get_all_get_params(array('action', 'reviews_id')) . 'action=buy_now') . '">' . zen_image_button(BUTTON_IMAGE_IN_CART, BUTTON_IN_CART_ALT) . '</a>';
   }
   $the_button = $link;
   $products_link = '';
-  echo zen_get_buy_now_button($review->fields['products_id'], $the_button, $products_link) . '<br />' . zen_get_products_quantity_min_units_display($review->fields['products_id']);
+  echo zen_get_buy_now_button($review->fields['products_id'], $the_button, $products_link) . '<br>' . zen_get_products_quantity_min_units_display($review->fields['products_id']);
 ?>
 
 
@@ -86,7 +86,7 @@
   } else {
 ?>
 
-<div id="productReviewsDefaultNoReviews" class="content group"><?php echo TEXT_NO_REVIEWS . (REVIEWS_APPROVAL == '1' ? '<br />' . TEXT_APPROVAL_REQUIRED: ''); ?></div>
+<div id="productReviewsDefaultNoReviews" class="content group"><?php echo TEXT_NO_REVIEWS . (REVIEWS_APPROVAL == '1' ? '<br>' . TEXT_APPROVAL_REQUIRED: ''); ?></div>
 
 <?php
   }

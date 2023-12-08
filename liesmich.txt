@@ -1,4 +1,4 @@
-Tabbed Products Pro 1.6.0 für Zen Cart 1.5.7 deutsch
+Tabbed Products Pro 1.7.0 für Zen Cart 1.5.7 deutsch
 
 Dieses Modul erlaubt die Darstellung der verschiedenen Informationen auf der Artikeldetailseite in Tabs.
 
@@ -15,7 +15,9 @@ https://www.zen-cart.com/downloads.php?do=file&id=646
 
 Installation und Verwendung:
 
-Dieses Modul ist nur für Zen Cart 1.5.7 deutsch geeignet.
+Dieses Modul ist nur für Zen Cart 1.5.7g deutsch geeignet.
+Stellen Sie sicher, dass Sie Ihren Shop auf 1.5.7g aktualisiert haben, bevor Sie dieses Modul installieren.
+Die mitgelieferten geänderten Dateien sind auf dem Stand von 1.5.7g!
 
 Für den Einbau dieses Moduls sollten Sie über folgende Werkzeuge verfügen:
 
@@ -57,6 +59,7 @@ Dann in der vorgegebenen Struktur hochladen, dabei werden keine bestehenden Date
 3)
 In die Zen Cart Administration einloggen und auf irgendeinen Menüpunkt clicken.
 Sie sollten oben die Erfolgsmeldung sehen Tabbed Products Pro erfolgreich installiert und unter Konfiguration ist nun der neue Menüpunkt Tabbed Products Pro Konfiguration vorhanden.
+Mit PHP 8.1 kann ein völlig harmloses Logfile bei der installation erzeugt werden (Undefined array key ...), dieses einfach löschen.
 
 4)
 Stellen Sie hier wie gewünscht ein
