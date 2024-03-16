@@ -62,7 +62,7 @@ if (empty($_SESSION['admin_id'])) {
         // updating existing entry
         $sql = "UPDATE ".TABLE_CONFIGURATION_GROUP." SET 
                 configuration_group_description = '".$tpp_menu_text."' 
-                WHERE configuration_group_title = '".tpp_menu_title."'";
+                WHERE configuration_group_title = '".$tpp_menu_title."'";
         $db->Execute($sql);
         $sort = $original_config->fields['sort_order'];
 
