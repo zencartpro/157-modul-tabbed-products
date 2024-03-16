@@ -5,11 +5,11 @@
  * Loaded automatically by index.php?main_page=document_general_info.
  * Displays template according to "document-general" product-type needs
  * 
- * @copyright Copyright 2003-2023 Zen Cart Development Team
+ * @copyright Copyright 2003-2024 Zen Cart Development Team
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: tpl_document_general_info_display.php for Tabbed Products Pro 2023-12-08 18:47:36Z webchills $
+ * @version $Id: tpl_document_general_info_display.php for Tabbed Products Pro 2024-03-16 18:47:36Z webchills $
  */
 ?>
 

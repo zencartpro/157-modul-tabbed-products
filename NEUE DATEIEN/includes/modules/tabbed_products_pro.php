@@ -1,15 +1,15 @@
 <?php
 /**
  * Tabs module - prepares information for use in Tabbed Products Pro
- * Tabbed Products Pro 1.6.0
+ * Tabbed Products Pro 1.8.0
  * 2-Aug-2008 - QHome (qhomezone@gmail.com)
  * 10-Oct-2013 - C Jones (http://overthehillweb.com)
  * 30-Mar-2022 - webchills (https://www.webchills.at)
  *
  * Zen Cart German Version - www.zen-cart-pro.at
- * @copyright Copyright 2003-2022 Zen Cart Development Team
+ * @copyright Copyright 2003-2024 Zen Cart Development Team
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: tabbed_products_pro.php 2022-03-30 19:37:04Z webchills $
+ * @version $Id: tabbed_products_pro.php 2024-03-16 15:37:04Z webchills $
  *
  */
 

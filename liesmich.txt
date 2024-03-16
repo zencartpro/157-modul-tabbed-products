@@ -1,4 +1,4 @@
-Tabbed Products Pro 1.7.0 für Zen Cart 1.5.7 deutsch
+Tabbed Products Pro 1.8.0 für Zen Cart 1.5.7 deutsch
 
 Dieses Modul erlaubt die Darstellung der verschiedenen Informationen auf der Artikeldetailseite in Tabs.
 
@@ -10,14 +10,21 @@ https://www.zen-cart.com/downloads.php?do=file&id=646
 - Konfiguration auf deutsch
 - Bugfix für Anzeige des Artikelbildes im Bewertungstab beim Template responsive_classic
 - Bugfix für Anzeige des Warenkorb Buttons im Bewertungstab
-- Anpassungen für 1.5.7 und PHP 8
+- Anpassungen für 1.5.7g/1.5.7h und PHP 8.2
 
+Hinweis:
+Seit Version 1.8.0 sind KEINE Änderungen mehr nötig in:
+includes/templates/DEINTEMPLATE/common/html_header.php
+includes/templates/DEINTEMPLATE/common/tpl_main_page.php
+
+Sollten Sie also eine ältere Version dieses Moduls verwenden, dann prüfen Sie diese beiden Dateien und machen Sie etwaige Änderungen dort wieder rückgängig!
+Sie können problemlos die Originaldateien dieser Dateien aus 1.5.7h verwenden!
 
 Installation und Verwendung:
 
-Dieses Modul ist nur für Zen Cart 1.5.7g deutsch geeignet.
-Stellen Sie sicher, dass Sie Ihren Shop auf 1.5.7g aktualisiert haben, bevor Sie dieses Modul installieren.
-Die mitgelieferten geänderten Dateien sind auf dem Stand von 1.5.7g!
+Dieses Modul ist nur für Zen Cart 1.5.7g/1.5.7h deutsch geeignet.
+Stellen Sie sicher, dass Sie Ihren Shop auf mindestens 1.5.7g aktualisiert haben, bevor Sie dieses Modul installieren.
+Die mitgelieferten geänderten Dateien sind auf dem Stand von 1.5.7h!
 
 Für den Einbau dieses Moduls sollten Sie über folgende Werkzeuge verfügen:
 
@@ -47,7 +54,7 @@ Die Installation erfolgt in folgenden Schritten. Halten Sie diesen Ablauf ein!
 1)
 Im Ordner GEAENDERTE DATEIEN den Ordner DEINTEMPLATE auf den Namen des im Shop aktiven Templates umbenennen.
 Hinweis: Der Ordner DEINTEMPLATE_RESPONSIVE enthält bereits für das Template responsive_classic angepasste Dateien. Falls Sie das Template responsive_classic verwenden, dann verwenden Sie unbedingt die Dateien aus dem Ordner DEINTEMPLATE_RESPONSIVE.
-Wenn Sie Zen Cart 1.5.7 gerade frisch installiert haben und noch keinerlei Änderungen an den Dateien vorgenommen haben, können Sie nun alle Dateien/Ordner aus dem Ordner GEAENDERTE DATEIEN in der vorgegebenen Struktur in die Zen Cart Installation hochladen. Dabei werden dann etliche Dateien überschrieben.
+Wenn Sie Zen Cart 1.5.7 gerade frisch installiert haben und noch keinerlei Änderungen an den Dateien vorgenommen haben, können Sie nun alle Dateien/Ordner aus dem Ordner GEAENDERTE DATEIEN in der vorgegebenen Struktur in die Zen Cart Installation hochladen. 
 Wenn Sie Zen Cart 1.5.7 schon länger im Einsatz haben und schon einmal Änderungen an Dateien vorgenommen oder andere Module eingebaut haben, dann laden Sie die Dateien keinesfalls einfach hoch.
 Vergleichen Sie alle Dateien im Ordner GEAENDERTE DATEIEN mit den entsprechenden Dateien in Ihrem Shop und nehmen Sie die Änderungen manuell per WinMerge oder BeyondCompare vor.
 Dann spielen Sie die geänderten Dateien in der gezeigten Struktur ein.
@@ -59,7 +66,7 @@ Dann in der vorgegebenen Struktur hochladen, dabei werden keine bestehenden Date
 3)
 In die Zen Cart Administration einloggen und auf irgendeinen Menüpunkt clicken.
 Sie sollten oben die Erfolgsmeldung sehen Tabbed Products Pro erfolgreich installiert und unter Konfiguration ist nun der neue Menüpunkt Tabbed Products Pro Konfiguration vorhanden.
-Mit PHP 8.1 kann ein völlig harmloses Logfile bei der installation erzeugt werden (Undefined array key ...), dieses einfach löschen.
+Mit PHP 8.1/8.2 kann ein völlig harmloses Logfile bei der installation erzeugt werden (Undefined array key ...), dieses einfach löschen.
 
 4)
 Stellen Sie hier wie gewünscht ein

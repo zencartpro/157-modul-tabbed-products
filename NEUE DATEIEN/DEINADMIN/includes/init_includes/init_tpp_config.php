@@ -17,7 +17,7 @@ if (empty($_SESSION['admin_id'])) {
 
     // Configuration Values to create or preserve
     $menu_items_tpp = array(
-            array('TPP_VERSION','1.7.0',1001,false),
+            array('TPP_VERSION','1.8.0',1001,false),
             array('TPP_GLOBAL_ENABLE_TABS','1',1011,array('0','1')),
             array('TPP_GLOBAL_MAIN_IMAGE_ON_TAB','0',1021,array('0','1')),
             array('TPP_GLOBAL_PROD_DESC_ON_TAB','1',1031,array('0','1')),
@@ -122,7 +122,7 @@ if (empty($_SESSION['admin_id'])) {
 	};
     }
 
-       $messageStack->add('Tabbed Products Pro 1.6.0 erfolgreich installiert!','success');
+       $messageStack->add('Tabbed Products Pro 1.8.0 erfolgreich installiert!','success');
 
 
 //=======================================

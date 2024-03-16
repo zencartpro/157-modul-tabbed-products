@@ -1,15 +1,15 @@
 <?php
 /**
  * Page Template
- * Zen Cart German Specific
+ * Zen Cart German Specific (158 code in 157 / zencartpro adaptations)
  * Loaded automatically by index.php?main_page=document_general_info.
  * Displays template according to "document-general" product-type needs
  * 
- * @copyright Copyright 2003-2022 Zen Cart Development Team
+ * @copyright Copyright 2003-2024 Zen Cart Development Team
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: tpl_document_general_info_display.php for Tabbed Products Pro 2023-12-08 18:33:58Z webchills $
+ * @version $Id: tpl_document_general_info_display.php for Tabbed Products Pro 2024-03-16 15:33:58Z webchills $
  */
 ?>
 
@@ -71,8 +71,10 @@ require($template->get_template_dir('/tpl_products_next_previous.php',DIR_WS_TEM
   require($template->get_template_dir('/tpl_modules_additional_images.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_modules_additional_images.php'); ?>
 <!--eof Additional Product Images -->
 </div>
-
-<div id="pinfo-right" class="group grids">
+<?php
+  }
+?>
+<div id="pinfo-right">
 <!--bof Product details list  -->
 <?php if ( (($flag_show_product_info_model == 1 and $products_model != '') or ($flag_show_product_info_weight == 1 and $products_weight !=0) or ($flag_show_product_info_quantity == 1) or ($flag_show_product_info_manufacturer == 1 and !empty($manufacturers_name))) ) { ?>
 <ul id="productDetailsList">
@@ -107,7 +109,7 @@ if ($flag_show_ask_a_question) {
 <!--eof free ship icon  -->
 </div>
 
-<div id="cart-box" class="grids">
+<div class="cart-box">
 <!--bof Product Price block -->
 <h2 id="productPrices" class="docGeneral">
 <?php

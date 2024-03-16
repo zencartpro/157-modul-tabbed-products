@@ -5,11 +5,11 @@
  * Loaded automatically by index.php?main_page=document_product_info.
  * Displays template according to "document-product" product-type needs
  * 
- * @copyright Copyright 2003-2022 Zen Cart Development Team
+ * @copyright Copyright 2003-2024 Zen Cart Development Team
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: tpl_document_product_info_display.php for Tabbed Products Pro 2023-12-08 18:47:36Z webchills $
+ * @version $Id: tpl_document_product_info_display.php for Tabbed Products Pro 2024-03-16 18:47:36Z webchills $
  */
 ?>
 
@@ -131,7 +131,7 @@ if (CUSTOMERS_APPROVAL == 3 and TEXT_LOGIN_FOR_PRICE_BUTTON_REPLACE_SHOWROOM == 
   <?php echo (($flag_show_product_info_quantity == 1) ? '<li>' . $products_quantity . TEXT_PRODUCT_QUANTITY . '</li>'  : '') . "\n"; ?>
   <?php echo (($flag_show_product_info_manufacturer == 1 and !empty($manufacturers_name)) ? '<li>' . TEXT_PRODUCT_MANUFACTURER . $manufacturers_name . '</li>' : '') . "\n"; ?>
 </ul>
-<br class="clearBoth" />
+<br class="clearBoth">
 <?php
   }
 ?>

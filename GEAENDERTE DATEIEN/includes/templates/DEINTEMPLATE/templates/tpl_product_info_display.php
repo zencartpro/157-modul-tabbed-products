@@ -5,11 +5,11 @@
  * Loaded automatically by index.php?main_page=product_info.
  * Displays details of a typical product
  *
- * @copyright Copyright 2003-2023 Zen Cart Development Team
+ * @copyright Copyright 2003-2024 Zen Cart Development Team
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: tpl_product_info_display.php for Tabbed Products Pro 2023-12-08 18:28:24Z webchills $
+ * @version $Id: tpl_product_info_display.php for Tabbed Products Pro 2024-03-16 18:28:24Z webchills $
  */
 ?>
 
