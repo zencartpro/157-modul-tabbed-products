@@ -84,11 +84,13 @@ require($template->get_template_dir('/tpl_products_next_previous.php',DIR_WS_TEM
 <?php } ?>
 <!--eof free ship icon  -->
 
-<?php 
-//BOF :: Tabbed Products Pro ::
+<!--bof Tabbed Products Pro-->
+<?php if ($products_description != '') {
 echo '<div id="tpptabBlock" style="display:none;">' . $tabData . '</div>';
-//EOF :: Tabbed Products Pro ::
+}
 ?>
+<!--eof Tabbed Products Pro-->
+
  <!--bof Product description -->
 <?php if ($products_description != '') { ?>
 <div id="productDescription" class="freeShip biggerText"><?php echo stripslashes($products_description); ?></div>
@@ -256,8 +258,9 @@ if ($flag_show_ask_a_question) {
 </form>
 <!--bof Form close-->
 </div>
-<?php 
-//BOF :: Tabbed Products Pro ::
+<!--bof Tabbed Products Pro-->
+<?php if ($products_description != '') {
 echo $tabjscript;
-//BOF :: Tabbed Products Pro ::
+}
 ?>
+<!--eof Tabbed Products Pro-->

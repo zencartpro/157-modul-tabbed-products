@@ -9,7 +9,7 @@
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: tpl_product_info_display.php for Tabbed Products Pro 2023-12-08 18:51:36Z webchills $
+ * @version $Id: tpl_product_info_display.php for Tabbed Products Pro 2024-03-31 12:51:36Z webchills $
  */
 ?>
 
@@ -184,12 +184,12 @@ if (CUSTOMERS_APPROVAL == 3 and TEXT_LOGIN_FOR_PRICE_BUTTON_REPLACE_SHOWROOM == 
 </div>
 
 
-
-<?php 
-//BOF :: Tabbed Products Pro ::
+<!--bof Tabbed Products Pro-->
+<?php if ($products_description != '') {
 echo '<div id="tpptabBlock" style="display:none;">' . $tabData . '</div>';
-//EOF :: Tabbed Products Pro ::
+}
 ?>
+<!--eof Tabbed Products Pro-->
 
 <!--bof Product description -->
 <?php if ($products_description != '') { ?>
@@ -268,8 +268,9 @@ echo '<div id="tpptabBlock" style="display:none;">' . $tabData . '</div>';
 </form>
 <!--bof Form close-->
 </div>
-<?php 
-//BOF :: Tabbed Products Pro ::
+<!--bof Tabbed Products Pro-->
+<?php if ($products_description != '') {
 echo $tabjscript;
-//BOF :: Tabbed Products Pro ::
+}
 ?>
+<!--eof Tabbed Products Pro-->

@@ -9,13 +9,13 @@
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Copyright 2003-2024 Zen Cart Development Team
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: tabbed_products_pro.php 2024-03-16 15:37:04Z webchills $
+ * @version $Id: tabbed_products_pro.php 2024-03-31 12:37:04Z webchills $
  *
  */
 
 $proddata = stripslashes($products_description);
 if ($proddata != "") {
-
+$tabData ='';
 	//-=-=-=- BOF: Tabbed Products Config -=-=-=-
 	//############   DB VALUES   #############
 		$bGblEnableTabs =               TPP_GLOBAL_ENABLE_TABS;  // Enable or Disable tabs
@@ -52,7 +52,7 @@ if ($proddata != "") {
 	//-=-=-=- EOF: Tabbed Products Config -=-=-=-
 
 	//-=-=-=- BOF: Tabbed Products Initialization -=-=-=-
-
+$tabjscript ='';
 	if ($bGblEnableTabs != TRUE) {
 
 		$chkTabStart =						false;
@@ -511,7 +511,7 @@ if ($proddata != "") {
 				//<!--eof Attributes Module -->
 				
 				// ===> Check if Product Details should be on tabs (content)
-				if ($bDetailsOnTab != false && $bDetailsExist) {
+				if ($bDetailsOnTab != false && $bDetailsExist = 1) {
 					$tabcontent .= "\n" . '<!--bof DetailsOnTab sc'.$a.'-->';
 					$tabcontent .= "\n" . '<div id="sc'.$a.'" class="tabcontent" style="display:block;">';
 					$tabcontent .= AddHeader ($details_tab_name, $a, $bShowHeaders);
@@ -656,7 +656,7 @@ if ($proddata != "") {
 			if (isset ($FindEnd[1]) && ($FindEnd[1] != "")){
 				$tabcontent .= "\n" . '<div class="productGeneral biggerText">' . $FindEnd[1] . '</div>' . "\n\n";
 			}	
-      $tabjscript='';
+      $tabjscript .='';
 			//Begin magic!
 			if ($CstmTags[0] != "") {
 				$tabstrip = str_replace('id="productDescription"', 'id="productDescription_tab"', $tabstrip);

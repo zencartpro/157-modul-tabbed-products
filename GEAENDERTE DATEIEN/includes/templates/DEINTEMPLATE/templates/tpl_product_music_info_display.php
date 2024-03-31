@@ -10,7 +10,7 @@
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: tpl_product_music_info_display.php for Tabbed Products Pro 2024-03-16 18:28:24Z webchills $
+ * @version $Id: tpl_product_music_info_display.php for Tabbed Products Pro 2024-03-31 12:28:24Z webchills $
  */
 ?>
 
@@ -84,11 +84,13 @@ require($template->get_template_dir('/tpl_products_next_previous.php',DIR_WS_TEM
 <?php } ?>
 <!--eof free ship icon  -->
 
-<?php 
-//BOF :: Tabbed Products Pro ::
+<!--bof Tabbed Products Pro-->
+<?php if ($products_description != '') {
 echo '<div id="tpptabBlock" style="display:none;">' . $tabData . '</div>';
-//EOF :: Tabbed Products Pro ::
+}
 ?>
+<!--eof Tabbed Products Pro-->
+
  <!--bof Product description -->
 <?php if ($products_description != '') { ?>
 <div id="productDescription" class="productGeneral biggerText"><?php echo stripslashes($products_description); ?></div>
@@ -268,8 +270,9 @@ if ($flag_show_ask_a_question) {
 </form>
 <!--bof Form close-->
 </div>
-<?php 
-//BOF :: Tabbed Products Pro ::
+<!--bof Tabbed Products Pro-->
+<?php if ($products_description != '') {
 echo $tabjscript;
-//BOF :: Tabbed Products Pro ::
+}
 ?>
+<!--eof Tabbed Products Pro-->
