@@ -14,4 +14,4 @@ deutsche Übersetzung/Anpassung des Moduls Tabbed Products Pro 1.20
 - Konfiguration auf deutsch
 - Bugfix für Anzeige des Artikelbildes im Bewertungstab beim Template responsive_classic
 - Bugfix für Anzeige des Warenkorb Buttons im Bewertungstab
-- Anpassungen für 1.5.7 und PHP 8
+- Anpassungen für 1.5.7h und PHP 8.2
